@@ -33,15 +33,15 @@ export const metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'Киностудия AMMA - Создаем истории',
-    description: 'Профессиональная киностудия с уникальным авторским подходом',
+    title: 'приглашение на пресс-показ',
+    description: 'фильма кукушка',
     url: 'https://ammafilms.ru',
     siteName: 'AMMA Film Studio',
     locale: 'ru_RU',
     type: 'website',
     images: [
       {
-        url: '/images/ima3.png',
+        url: '/ima1.png',
         width: 1200,
         height: 630,
         alt: 'AMMA Film Studio',
