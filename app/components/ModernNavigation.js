@@ -41,7 +41,8 @@ export default function ModernNavigation() {
 
   const menuItems = [
     { path: '/projects', label: 'Проекты' },
-    { path: '/invite', label: 'приглашения' }
+    { path: '/invite', label: 'приглашения' },
+    { path: '/invite2', label: 'приглашения амга' }
   ];
 
   // Проверяем, является ли ссылка активной
