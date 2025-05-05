@@ -185,12 +185,12 @@ export default function Home() {
       /* Оптимизация для мобильных устройств */
       @media (max-width: 768px) {
         .hero-pattern-overlay {
-          opacity: 0.06;
+          opacity: 100;
           top: -10%;
           left: -10%;
-          width: 120%;
-          height: 120%;
-          background-size: 150%;
+          width: 190%;
+          height: 190%;
+          background-size: 250%;
         }
         
         @keyframes mobileInfiniteScroll {
@@ -204,12 +204,6 @@ export default function Home() {
             heroPatternPulse 10s infinite ease-in-out,
             mobileInfiniteScroll 12s infinite ease-in-out;
         }
-        
-        .hero-gradient {
-          background: linear-gradient(145deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0.7)) !important;
-          width: 100%;
-          height: 100%;
-        }
       }
       
       /* Оптимизация для очень маленьких экранов */
@@ -219,9 +213,7 @@ export default function Home() {
           background-size: 120%;
         }
         
-        .hero-gradient {
-          background: linear-gradient(145deg, rgba(0,0,0,1) 70%, rgba(0,0,0,0.7)) !important;
-        }
+       
       }
     `;
     document.head.appendChild(styleElement);
