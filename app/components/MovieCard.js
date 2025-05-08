@@ -121,29 +121,7 @@ export default function MovieCard({ movie, index = 0 }) {
         </motion.div>
         
         {/* Кнопка трейлера */}
-        {!showTrailer && (
-          <motion.div 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ 
-              opacity: isHovered ? 1 : 0,
-              scale: isHovered ? 1 : 0.8
-            }}
-            transition={{ duration: 0.3 }}
-          >
-            <motion.button
-              onClick={() => setShowTrailer(true)}
-              className="bg-white/10 backdrop-blur-md p-3 rounded-full hover:bg-white/20 transition-colors duration-300"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 3l14 9-14 9V3z" fill="white"/>
-              </svg>
-            </motion.button>
-            <span className="block text-center text-xs mt-2 opacity-80">Трейлер</span>
-          </motion.div>
-        )}
+        
       </div>
       
       {/* Теги проекта */}

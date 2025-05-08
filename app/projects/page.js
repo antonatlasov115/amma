@@ -604,12 +604,7 @@ export default function ProjectsPage() {
           viewport={{ once: true }}
         >
           <div className="absolute inset-0 bg-black/80 z-10"></div>
-          <Image 
-            src="/images/project-3.jpg" 
-            alt="Связаться с нами" 
-            fill 
-            className="object-cover opacity-30 grayscale" 
-          />
+          
         </motion.div>
         
         <div className="te-container text-center relative z-20">

@@ -185,12 +185,17 @@ export default function Home() {
       /* Оптимизация для мобильных устройств */
       @media (max-width: 768px) {
         .hero-pattern-overlay {
-          opacity: 100;
-          top: -10%;
-          left: -10%;
-          width: 190%;
-          height: 190%;
-          background-size: 250%;
+           position: absolute;
+        top: -170%;
+        left: -20%;
+        width: 390%;
+        height: 450%;
+        opacity: 0.15;
+        background-image: url('/hero.svg');
+        background-size: 200%;
+        background-position: center center;
+        z-index: 0;
+        pointer-events: none;
         }
         
         @keyframes mobileInfiniteScroll {
@@ -295,28 +300,12 @@ export default function Home() {
                         </svg>
                       </PulseButton>
                     </Link>
-                    <Link href="/about">
-                      <motion.div
-                        className="min-button-outline flex items-center justify-center group"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <span>О студии</span>
-                        <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </motion.div>
-                    </Link>
+                    
                   </div>
                 </FadeIn>
                 
                 {/* Добавляем индикатор года основания */}
-                <FadeIn direction="up" delay={0.8}>
-                  <div className="mt-16 flex items-center">
-                    <div className="w-8 h-[1px] bg-white/30 mr-4"></div>
-                    <span className="text-xs text-gray-400">Основано в 2018</span>
-                  </div>
-                </FadeIn>
+               
               </div>
               
               <div className="relative h-[400px] lg:h-[500px] mt-8 lg:mt-0 overflow-hidden rounded-lg">
@@ -346,33 +335,9 @@ export default function Home() {
                       </Link>
                     </div>
                     
-                    {/* Индикаторы слайдера */}
-                    <div className="absolute bottom-8 right-8 flex space-x-2 z-10 md:block hidden">
-                      {projects.map((_, i) => (
-                        <button
-                          key={i}
-                          className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                            activeIndex === i ? "bg-white w-6" : "bg-white/30 hover:bg-white/50"
-                          }`}
-                          onClick={() => setActiveIndex(i)}
-                          aria-label={`Переключить на проект ${projects[i].title}`}
-                        />
-                      ))}
-                    </div>
+                   
                     
-                    {/* Индикаторы слайдера для мобильных устройств */}
-                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10 md:hidden">
-                      {projects.map((_, i) => (
-                        <button
-                          key={i}
-                          className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                            activeIndex === i ? "bg-white w-6" : "bg-white/30 hover:bg-white/50"
-                          }`}
-                          onClick={() => setActiveIndex(i)}
-                          aria-label={`Переключить на проект ${projects[i].title}`}
-                        />
-                      ))}
-                    </div>
+                   
                   </div>
                 </SlideIn>
               </div>
