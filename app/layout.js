@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'приглашение на пресс-показ',
+  title: 'приглашение на премьеру',
   description: 'фильма кукушка',
   keywords: 'киностудия, фильмы, кинопроизводство, документальное кино, рекламные ролики, видеопроизводство, кинематограф, режиссура',
   authors: [{ name: 'AMMA Studio', url: 'https://ammafilms.ru' }],
@@ -33,7 +33,7 @@ export const metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'приглашение на пресс-показ',
+    title: 'приглашение на премьеру',
     description: 'фильма кукушка',
     url: 'https://ammafilms.ru',
     siteName: 'AMMA Film Studio',
